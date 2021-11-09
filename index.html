@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant Using Selectors</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css" integrity="sha512-LKG0Zi6duJ5mwncLtQVchN0iF8fWmcxApuX9pqGq7ITgwQDWR9EqZFsrV9TXfE9pPRa1J6GVnsBl7gKxAyllaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            *
+            {
+                margin:0%;
+            }
+            body{
+                  background-image: url("333634.jpg");
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: cover;
+                  height:100vh;
+        
+                }
+
+header
+{
+    position: fixed;
+			    top:0; 
+			    left:0;
+			     width:100%; 
+                 height:1%;
+			     background:black; 
+			     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);  
+                 padding:2rem 0%; 
+			     display: flex;
+			      align-items: center;
+			       justify-content: space-between; z-index: 1000; 
+}
+header .momo
+{
+    font-size: 1rem; 
+			 color:purple;
+             line-height: 30px;
+}
+header nav a{ 
+		 font-size: 1.7rem;
+		  margin-left: 2rem; 
+		  color: violet; 
+		  } 
+          .menu
+          {
+              float:right;
+              height:100%;
+              width:60%;
+              border:2px solid red;
+          }
+.momo h3{
+    color:chartreuse;
+
+}
+a
+{
+    color: rgb(247, 201, 20);
+    text-decoration: none;
+    margin-right: 25px;
+}
+#Menu
+{
+text-align: center;
+float: right;
+width: 60%;
+line-height: 70px;
+
+}
+#Home
+{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#Flavours
+{
+    background: linear-gradient(65deg,blue,gold);
+}
+#Footer{
+    text-align: center;
+    background: black;
+    color: cornsilk;
+    margin-top: 70vh;
+    padding: 5px;
+    line-height: 15px;
+
+}
+#content
+{
+    display: flex;
+    gap:200px;
+    margin: 3%;
+
+}
+
+#cont
+{
+    height: 400px;
+    width:600px;
+    border:3px solid blue;
+    border-radius: 10% 10% 10% 10%;
+    box-shadow: 2px 2px 8px 8px  skyblue;
+    background: linear-gradient(45deg,green,red);
+}
+#cont h1,p/*Grouping Slector*/
+{
+    text-align: center;
+    color: white;
+    font-weight:bolder;
+
+}
+#cont p{
+    font-size: 14px;
+    line-height: 30px;
+}
+p::selection
+{
+    background-color: yellow;
+    color: red;
+}
+#cont p::first-letter
+{
+    color: red;
+    font-size:x-large;
+    font-weight:bolder;
+}
+#cont p::first-line
+{
+    color:skyblue;
+    font-size: 16px;
+    font-style: italic;
+}
+#image > img/*child Selector*/
+{
+    height: 400px;
+    width:600px;
+    border:2px solid blue;
+border-radius: 10% 10% 10% 10%;
+box-shadow: 2px 2px 8px 8px  skyblue;
+}
+button
+{
+display: inline-block; 
+				     margin-top: 1rem; 
+                     margin-left: 7rem;
+				     padding:.2rem 1rem;
+				      border-radius: 5rem; 
+				    font-size: 1.5rem;
+                    background:var(--gradient);         
+				     color:#fff;
+				      cursor: pointer;
+				  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); 
+				   transition: all .3s linear; 
+                   background: linear-gradient(45deg,black,gold);
+                   color:blue;
+}
+button:hover
+{
+color:red;
+cursor: pointer;
+transform: scale(1.1); 
+}
+/* Flavours Section Started*/
+.flav_brand
+{
+    height:25%;
+    width:50%;
+    border:2px solid yellow;
+    border-radius: 50%;
+    box-shadow:2px 2px 2px 2px yellowgreen;
+    margin-left: 25%;
+    text-align: center;
+    background-color: teal;
+    padding: 20px;
+    color: maroon;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: fantasy;
+}
+.flav_img_container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:50px;
+    padding-top: 30px;
+}
+
+.flav_img
+{
+    height: 400px;
+    width:400px;
+    border:2px solid blue;
+border-radius: 10% 10% 10% 10%;
+align-self: flex-end;
+text-align: center;
+}
+.flav_img img
+{
+    height: 400px;
+    width:400px;
+    border-radius: 10% 10% 10% 10%;
+}
+#OCCASIONS
+{
+    background: linear-gradient(65deg,blue,gold);  
+}
+.Occassions
+{
+    height:15%;
+    width:50%;
+    border:2px solid yellow;
+    border-radius: 50%;
+    box-shadow:2px 2px 2px 2px yellowgreen;
+    margin-left: 25%;
+    margin-top: 3%;
+    text-align: center;
+    background-color: teal;
+    color: maroon;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: fantasy; 
+    padding: 25px;
+}
+#Types
+{
+    background: linear-gradient(65deg,blue,gold);
+}
+
+ </style>
+    </head>
+    <body>
+        <!-- Header Section-->
+        <header>
+            <div class="momo">
+            <h1>MOMO CAKE MUGI</h1>
+            <h3>Celebrate Your Occassions</h3>
+            </div>
+            <div id="Menu">
+                <a href="index.html">HOME</a>
+                <a href="#Flavours">FLAVOURS</a>
+                <a href="#OCCASIONS">OCCASIONS</a>
+                <a href="#Types">TYPES</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="login.html">LOGIN/REGISTER</a>
+            </div>
+        </header>
+       <section id="Home">
+           <div id="content">
+               <div id="cont">
+                   <h1><span style="color:springgreen;">MOMO</span><span style="color: tomato;">CAKES</span><span style="color:yellowgreen">MUGI</span></h1>
+                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero sint natus, placeat officia nobis impedit eaque quia. Recusandae, id eius? Dolorem expedita ab eius aspernatur, sequi distinctio veritatis at.</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel molestias voluptas iusto aut soluta, saepe sequi quasi, quae tenetur laborum alias expedita quis, quam dolor ab voluptate. Fugiat, harum?</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eos veniam vero nesciunt provident sint molestiae reiciendis soluta, maiores sunt dolores qui fugiat similique minima unde sapiente harum quibusdam non.</p>
+                   <button>Explore More!!!</button>
+                </div>
+           <div id="image">
+               <img src="cons.jpg"/>
+           </div>
+        </div>
+       </section>
+       <section id="Flavours">
+           <div class="flav_brand">
+               <h1>FLAVOURS</h1>
+           </div>
+           <div class="flav_img_container">
+               <div class="flav_img">
+               <img src="truffle.jpg"/>
+               <h3>TRUFFLE</h3>
+               </div>
+               <div class="flav_img">
+               <img src="choclate.jpg"/>
+               <h3>CHOCLATE</h3>
+               </div>
+               <div class="flav_img">
+               <img src="black forest.jpg"/>
+               <h3>BLACK FOREST</h3>
+               </div>
+               <div class="flav_img">
+
+               <img src="butter scotch.jpg"/>
+               <h3>BUTTER SCOTCH</h3>
+               </div>
+               <div class="flav_img">
+
+               <img src="pine apple.jpg"/>
+               <h3>PINE APPLE</h3>
+               </div>
+               <div class="flav_img">
+
+               <img src="cheese.jpg"/>
+               <h3>CHEESE CAKE</h3>
+               </div>
+               <div class="flav_img">
+
+               <img src="vanilla.jpg"/>
+               <h3>VANILLA</h3>
+               </div>
+               <div class="flav_img">
+
+               <img src="red velvet.jpg"/>
+               <h3>RED VELVET</h3>
+               </div>
+               <div class="flav_img">
+
+               <img src="fresh fruit.jpg"/>
+               <h3>FRESH FRUIT</h3>
+               </div>
+               <div class="flav_img">
+
+               <img src="caramel.jpg"/>
+               <h3>CARAMEL</h3>
+               </div>
+               <div class="flav_img">
+
+               <img src="oreo.png"/>
+               <h3>OREO</h3>
+               </div>
+               <div class="flav_img">
+
+               <img src="coffee.jpg"/>
+               <h3>COFFEE</h3>
+               </div>
+               <div class="flav_img">
+
+               <img src="stawberry.webp"/>
+               <h3>STAWBERRY</h3>
+               </div>
+               <div class="flav_img">
+
+               <img src="walnut.jpg"/>
+               <h3>WALNUT</h3>
+               </div>
+
+           </div>
+
+       </section>
+       <section id="OCCASIONS" >
+       <div class="Occassions">
+        <h1>OCCASIONS</h1>
+    </div>
+    <div class="flav_img_container">
+        <div class="flav_img">
+            <img src="birthday.png"/>
+            <h3>BIRTHDAY</h3>
+            </div>
+            <div class="flav_img">
+                <img src="1st birth.jpg"/>
+                <h3>1st BIRTHDAY</h3>
+                </div>
+                <div class="flav_img">
+                    <img src="anniversary.jpg"/>
+                    <h3>ANNIVERSARY</h3>
+                    </div>
+                    <div class="flav_img">
+                        <img src="1st anniversary.jpg"/>
+                        <h3>1st ANNIVERSARY</h3>
+                        </div>
+                        <div class="flav_img">
+                            <img src="25th anniversary.jpg"/>
+                            <h3>25th ANNIVERSARY</h3>
+                            </div>
+                            <div class="flav_img">
+                                <img src="congratulations.jpg"/>
+                                <h3>CONGRATULATIONS</h3>
+                                </div>
+                                <div class="flav_img">
+                                    <img src="wedding.png"/>
+                                    <h3>WEDDING</h3>
+                                    </div>
+                                    <div class="flav_img">
+                                        <img src="sorry2.jpg"/>
+                                        <h3>I AM SORRY</h3>
+                                        </div>
+                                        <div class="flav_img">
+                                            <img src="kids.jpg"/>
+                                            <h3>BIRTHDAY CAKES FOR KIDS</h3>
+                                            </div>
+
+    </div>
+</section>
+<section id="Types">      
+      <div class="Occassions">
+            <h1>TYPES</h1>
+        </div>
+        <div class="flav_img_container">
+            <div class="flav_img">
+                <img src="BESTSELL.jpg"/>
+                <h3>BESTSELLER CAKES</h3>
+                </div>
+                <div class="flav_img">
+                    <img src="new arrival.jpg"/>
+                    <h3>NEW ARRIVAL CAKES</h3>
+                    </div>
+                    <div class="flav_img">
+                        <img src="eggless.jpeg"/>
+                        <h3>EGGLESS CAKES</h3>
+                        </div>
+                        <div class="flav_img">
+                            <img src="designer.png"/>
+                            <h3>DESIGNER CAKES</h3>
+                            </div>
+                            <div class="flav_img">
+                                <img src="photocake.webp"/>
+                                <h3>PHOTO CAKES</h3>
+                                </div>
+                                <div class="flav_img">
+                                    <img src="rose.png"/>
+                                    <h3>ROSE CAKES</h3>
+                                    </div>
+                                    <div class="flav_img">
+                                        <img src="drycake.jpg"/>
+                                        <h3>DRY CAKES</h3>
+                                        </div>
+                                        <div class="flav_img">
+                                            <img src="cartoon.jpg"/>
+                                            <h3>CARTOON CAKES</h3>
+                                            </div>
+                                            <div class="flav_img">
+                                                <img src="cup.webp"/>
+                                                <h3>CUP CAKE</h3>
+                                                </div>
+                                                <div class="flav_img">
+                                                    <img src="cookies.jpg"/>
+                                                    <h3>COOKIES</h3>
+                                                    </div>
+                                                    <div class="flav_img">
+                                                        <img src="fusion.jpeg"/>
+                                                        <h3>FUSION CAKES</h3>
+                                                        </div>
+                                                        <div class="flav_img">
+                                                            <img src="heart shape.jpg"/>
+                                                            <h3>HEART SHAPPED CAKES</h3>
+                                                            </div>
+
+       </section>
+       <!--<div id="Footer">
+        <div style="margin-bottom: 10px;">
+            <span><a href="#"><i class="fa fa-facebook"></i></a></span>
+            <span><a href="#"><i class="fa fa-instagram"></i></a></span>
+            <span><a href="#"><i class="fa fa-twitter"></i></a></span>
+            <span><a href="#"><i class="fa fa-linkedin"></i></a></span>
+
+        </div>
+        <div id="main"></div>
+        <div style="margin-bottom: 10px;">
+            <p>If the visit was for a holiday, such as Christmas, Thanksgiving, or your birthday, or another event, or another special occasion, you could modify the examples to including appropriate wording.Thanks to visiting our website.</p>
+        </div>
+        <div>
+            <h4>All copyrights &copy; are Reserved by Tamil</h4>
+        </div>-->
+    </div>
+    </body>
+</html>

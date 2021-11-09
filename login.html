@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            body
+        {
+           
+            background-image: url("background login.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div
+        {
+            padding: 45px;
+            text-align: center;
+            
+        }
+        form
+        {
+    
+            background-color:black;
+            padding: 40px;
+            width:500px;
+            box-shadow:0 0 10px greenyellow;
+            border: 2px solid goldenrod;
+            
+        }
+        input[type=text],input[type=password]
+        {
+            width:100%;
+            margin:8px 0;
+            padding: 10px 40px ;
+            border: 2px solid blue;
+            box-sizing: border-box;
+        }
+        button:hover{
+            opacity: 0.7;
+        }
+        button{
+            color:white;
+            font-weight: bold;
+            background-color:red;
+            border: 2px solid white;
+            height: 30px;
+            width: 60px;
+            border-radius: 10px;
+            
+        }
+        input[type=reset]:hover
+        {
+            opacity:0.7;
+        }
+
+        input[type=reset]
+        {
+            color:white;
+            font-weight: bold;
+            background-color: red;
+            border: 2px solid white;
+            height: 30px;
+            width: 60px;
+            border-radius: 10px;
+             
+        }
+        #res{
+            padding: 10px;
+        }
+        
+        table
+        {
+            text-align: center;
+        }
+        label
+        {
+            
+            color:blue;
+        }
+        a{
+            text-decoration: none;
+
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <center><form>
+                <center><h1 style="color: blue;font-family:serif;">LOGIN</h1></center>
+    
+                
+                <table>
+                    <tr>
+                        <td>
+                            <label>USER NAME</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Enter Username" name="Username"required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>PASSWORD</label>
+                        </td>
+                        <td>
+                            <input type="password"placeholder="Enter Password"name="password"required/> 
+                        </td>
+                        </tr>
+    <tr>
+        <td></td>
+        <td id=res>
+            <input type="reset" value="RESET"style="margin-right:20px"/>
+            <button type="submit">LOGIN</a></button>
+             
+        </td>
+    
+    </tr>  
+    <tr>
+        
+        <td>
+            <input type="checkbox" checked="checked"/> <color style="color:white">Reminder Me</color>
+            </td>
+            <td></td>
+            <td>
+             <a href="#">Forgot password?</a>
+             
+        </td>
+    
+    </tr>  
+                    
+    </table>
+    <h4 style="text-align: left;font-weight: normal;color:white">Don't have an account ?<a href="register.html">Register</a></h4>
+            </form></center>
+            </div>
+        
+        
+    </body>
+</html>

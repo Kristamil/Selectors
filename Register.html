@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <style>
+body
+{
+    font-family: 'Courier New', Courier, monospace;
+    background-image:url("background login.jpg");
+    background-repeat: no-repeat;
+            background-size: cover;
+}
+label
+{
+    color:white;
+    text-align: left;
+}
+.container
+{
+    
+    background-color:black;
+            padding: 20px;
+            width:500px;
+            box-shadow:0 0 10px greenyellow;
+            border: 2px solid goldenrod;
+}
+input[type=text],input[type=password]
+{
+    width: 200px;
+    padding: 10px;
+    margin:5px 0 22px 0;
+    display: inline-block;
+    border: none;
+}
+input[type=text]:focus,input[type=password]:focus
+{
+    background-color: lightskyblue;
+    outline: none;
+}
+div{
+    padding: 10px 0;
+}
+hr{
+    border: 1px solid blue;
+}
+.reg
+{
+    
+    
+    padding: 15px 20px;    
+    cursor:pointer;
+
+    opacity: 0.9;
+    color:white;
+            font-weight: bold;
+            background-color:red;
+            border: 2px solid white;
+            height: 40px;
+            width: 150px;
+            border-radius: 10px;
+            padding-top: 10px;
+            margin-top: 20px;
+}
+.reg:hover
+{
+    opacity: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+        </style>
+    </head>
+    <body>
+        <div>
+        </div>
+        <center>
+        <form>
+            <div class="container">
+                <center><h1 style="color: blue;">REGISTRATION FORM</h1></center>
+                <hr>
+                <table>
+                    <tr>
+                        <td>
+                <label style="text-align: left;"><b>Firstname</b></label>
+            </td>
+            <td>
+                <input type="text" name="firstname"placeholder="Firstname"size="15"required/>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                <label><b>Middlename</b></label>
+            </td>
+            <td>
+                <input type="text" name="middlename"placeholder="Middlename"size="15"required/>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                <label><b>Lastname</b></label>
+            </td>
+            <td>
+                <input type="text" name="last"placeholder="Lastname"size="15"required/>
+            </td>
+            </tr>
+                
+                <div>
+                    
+                    </select>
+                    
+                    
+                        <tr>
+                            <td>
+                    <label><b>Phone</b></label>
+                </td>
+                <td>
+                    <input type="text"name="country code"placeholder="country code"value="+91"size="2"style="width: 50px; height:25px;"/>
+                
+                    <input type="text"name="Phone"placeholder="phone no"size="10"required style="width: 100px; height:25px;"/>
+                </td>
+                       </tr>
+                
+                    
+                        <tr>
+                            <td>
+                    <label for="email"><b>Email</b></label>
+                </td>
+                <td>
+                    <input type="text" name="email"placeholder="Enter Email"required/>
+                </td>
+                </tr>
+                
+                    
+                    
+                        <tr>
+                            <td>
+                    <label for="psw"><b>Password</b></label>
+                </td>
+                <td>
+                    
+                    <input type="password" name="psw"placeholder="Enter Password"required/>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                
+                    <label for="psw-repeat"><b>Re-type Password</b></label>
+                </td>
+                <td>
+                
+                    <input type="password" name="psw-repeat"placeholder="Re-type Password"required/>
+                </td>
+                </tr>
+                </table>
+                <div>
+                    <label><b>Gender:</b></label>
+                    <input type="radio" value="Male"name="gender"checked><color style="color:white">Male</color>
+                    <input type="radio" value="Female"name="gender"checked><color style="color:white">FeMale</color>
+                    <input type="radio" value="Other"name="gender"checked><color style="color:white">Other</color><br>
+                
+        
+                    <button type="submit"class="Reg">
+                        <b>Register</b></button>
+    
+                </div>
+    
+    
+            </div>
+        </form>
+    </center>
+    </body>
+</html>
